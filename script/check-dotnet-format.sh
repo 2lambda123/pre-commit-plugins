@@ -15,7 +15,7 @@ if [[ $# -eq 0 ]]
   else
     # Run dotnet-format on the directories of any C# project files found
     for project in "${@}"
-    do        
+    do
         dotnet-format "$(dirname "${project}")"
     done
 fi
